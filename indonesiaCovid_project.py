@@ -337,12 +337,6 @@ df = pd.concat([df1, df2, df3, df4], axis=1)
 df.set_index('Month', inplace=True)
 print(df)
 #
-# df['Case Growth %'].replace('-', 0, inplace=True)
-# df['Case Growth %'] = df['Case Growth %'].str.replace('%', '')
-# df['Case Growth %'] = df['Case Growth %'].astype('float64')
-# df['Case Growth %'] = df['Case Growth %'].fillna(0)
-# print(df)
-#
 ax = sns.lineplot(x='Month', y='Total Case', data=df)
 ax = sns.lineplot(x='Month', y='Total Recovered', data=df, color='green')
 ax = sns.lineplot(x='Month', y='Total Death', data=df, color='red')
