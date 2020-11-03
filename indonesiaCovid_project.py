@@ -7,7 +7,7 @@ pd.set_option('display.width', 500)
 pd.set_option('display.max_columns', 12)
 
 # https://bnpb-inacovid19.hub.arcgis.com/datasets/statistik-perkembangan-covid19-indonesia-new/data?orderBy=Tanggal&orderByAsc=false
-data = pd.read_csv('E:/Besha/belajar/pandas exercise/exercise 12/Statistik_Perkembangan_COVID19_Indonesia_New.csv')
+data = pd.read_csv('E:/.../Statistik_Perkembangan_COVID19_Indonesia_New.csv')
 
 data.sort_values(by='Hari_ke', ascending=True, inplace=True)
 data = data.iloc[:, :13].reset_index()
